@@ -45,6 +45,12 @@
                 loading.style.display = 'none';
             }
         }
+        const response = await fetch('https://tiktok-downloader-a8q3.onrender.com/download', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url })
+});
+
     </script>
 </head>
 <body>
